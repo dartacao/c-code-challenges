@@ -9,7 +9,7 @@ int primes[] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59,
 const char alpha[] = "abcdefghijklmnopqrstuvwxyz";
 const len = sizeof(alpha) / sizeof(alpha[0]);
 
-int mapPrime(char c)
+int getPrime(char c)
 {
 	for (int i = 0; i < len; i++)
 	{
@@ -39,6 +39,7 @@ int getPrimeHash(char *word, int word_len)
 
 char *solver2 (char **dict, int dict_len, char *word, int word_len)
 {
-	// int ANAGRAM_HASH = getPrimeHash();
+	int MATCH_HASH = getPrimeHash();
 	return "yeet";
 }
+
